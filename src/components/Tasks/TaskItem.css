@@ -1,0 +1,30 @@
+.task-item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: white;
+}
+
+.task-item_description {
+  align-items: center;
+  color: White;
+  flex: 1;
+  margin: 0 1rem;
+  color: #2A2A72;
+}
+
+@media (min-width: 580px) {
+  .task-item_description {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .task-item_description h2 {
+    font-size: 1.25rem;
+  }
+}
